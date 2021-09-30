@@ -57,6 +57,8 @@ function save() {
     status: status,
     outpassid: oid + rollno,
   });
+ alert("Application is submitted successfully! Status will be approved in mail")
+ location.reload()
 }
 
 function get() {
