@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Outpass portal kpriet</title>
+    <link rel="stylesheet" href="style.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+    href="https://fonts.googleapis.com/css2?family=Roboto:wght@300&family=Sriracha&display=swap"
+    rel="stylesheet"
+    />
+    <script src="https://smtpjs.com/v3/smtp.js"></script>
+  </head>
+  <body>
+    <script src="https://www.gstatic.com/firebasejs/8.3.1/firebase-app.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/8.3.1/firebase-database.js"></script>
+    <!-- <script src="index.js"></script> -->
+    <script src="index.js"></script>
+  
+    <img class="bg" src="images/kpr_college_bg.jpg" alt="KPRIET" />
+    <div class="container">
+      <h1>Welcome to KPRIET Outpass portal</h1>
+     
+      <!-- Successfully submited message -->
+      <div class = "form_container">
+        <p>Primary Details</p>
+        <hr />
+
+        <input type="text"  id="rollno" placeholder="Enter the student Roll no" />
+
+        <div class="details">Student Name : <p id="name"></p></div>
+        <div class="details">Roll No : <p id="rollno2"></p></div>
+        <div class="details">Branch : <p id="branch"></p></div>
+        <div class="details">Year : <p id="year"></p></div>
+        
+        
+        <p>Contact Details</p>
+        <hr />
+        <div class="details">Phone Number : <p id="phoneno"></p></div>
+        <div class="details">Email : <p id="email"></p></div>
+        <div class="details">Parent's Phone Number : <p id="parentphoneno"></p></div>
+        
+        
+        
+        
+        
+        <p>Outpass Details</p>
+        <hr />
+        
+        <div class="details">Parent's Phone Number : <p id="hostelname"></p></div>
+        <div class="details">From date : <p id="fdate"></p></div>
+        <div class="details">To date : <p id="tdate"></p></div>
+        <div class="details">Mode : <p id="mode"></p></div>
+        <div class="details">Reason : <p id="letter"></p></div>
+        <div class="details">Queries : <p id="queries"></p></div>
+        
+        <div class="inp">
+          <select name="status" id="status">
+            <option value="none">select</option>
+            <option value="approved">approve</option>
+            <option value="disapproved">disapprove</option>
+          </select>
+
+          <button onclick="status()">enter</button>
+
+          
+        </div>
+
+        
+
+        <button class="btn" onclick = "get()">Get details</button>
+        
+    <button onclick="sendEmail();">Send mail to student</button>
+
+        <a href="/hodlogin.html">
+          <button class="btn" >Back to login</button></a>
+        
+      </div>
+    </div>
+  </body>
+</html>

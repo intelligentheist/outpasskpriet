@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html>
+    
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="    viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="login.css">
+
+    <script src="https://www.gstatic.com/firebasejs/8.2.7/firebase-app.js"></script>
+<script src="https://www.gstatic.com/firebasejs/8.2.7/firebase-auth.js"></script>
+<script src="form.js"></script>
+
+
+<title>Login for outpass</title>
+</head>
+ 
+<body>
+    
+    <div class="bg-img">
+        <h1>OUTPASS LOGIN</h1>
+         
+        <div class="form_container">
+            <b>Username</b>
+            <input type="text" placeholder="Username Please"
+                    name="username" required id = "email">
+ 
+            <b>Password</b>
+            <input type="password" placeholder="Enter Password"
+                    name="password" required id = "password">
+ 
+            <!-- <button type="submit" class="button">Login</button> -->
+            <div class="btn">
+                <button onclick="signUp()" id="signUp">SignUp</button>
+                <button onclick="signIn()" id="signIn">SignIn</button>
+                <button onclick="signOut()" id="signOut">SignOut</button>
+
+            </div>
+       
+        </div>
+    </div>
+</body>
+ 
+</html>
